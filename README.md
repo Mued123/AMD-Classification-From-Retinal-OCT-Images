@@ -30,10 +30,10 @@ The project uses publicly available NEH and UCSD OCT datasets.
 Dataset split into training, validation, and test folders.
 
 🧪 Results
+Model | Accuracy | Parameters
+FPN + VGG16 | 96% | 16.1M
+Base Paper | 92% | 21.6M
 
-Model	Accuracy	Parameters
-FPN + VGG16	96%	16.1M
-Base Paper	92%	21.6M
 📦 Requirements
 Python ≥ 3.8
 
