@@ -1,5 +1,7 @@
 This repository contains the implementation of my undergraduate thesis titled:
 "Optimizing Multi-Scale CNN with Attention Mechanisms for Automated AMD Diagnosis from Retinal OCT Images."
+
+
 📌 Overview
 This work proposes a Feature Pyramid Network (FPN)-based CNN architecture enhanced with attention mechanisms (Soft Attention, Channel Attention, SE block) to improve automated diagnosis of Age-related Macular Degeneration (AMD) using retinal OCT images.
 
