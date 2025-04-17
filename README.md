@@ -1,43 +1,44 @@
-# AMD-Classification-From-Retinal-OCT-Images
-This repository contains the implementation of my thesis project titled:
+his repository contains the implementation of my thesis:
 "Optimizing Multi-Scale CNN with Attention Mechanisms for Automated AMD Diagnosis from Retinal OCT Images."
 
-The study proposes an enhanced FPN-based architecture using various CNN backbones (VGG16, ResNet50, DenseNet121, etc.) integrated with attention modules (e.g., Soft Attention, Squeeze-and-Excitation) to improve classification performance on retinal OCT images. The model is evaluated on multiple datasets (NEH, UCSD), achieving high accuracy and demonstrating strong generalization capability with reduced parameter count.
+📌 Overview
+This work proposes a Feature Pyramid Network (FPN)-based CNN architecture enhanced with attention mechanisms (Soft Attention, Channel Attention, SE block) to improve automated diagnosis of Age-related Macular Degeneration (AMD) using retinal OCT images.
 
-🔬 Key Features:
-Multi-scale feature extraction using Feature Pyramid Networks (FPN)
+📊 Highlights
+📈 Achieved 96% accuracy on the NEH dataset — a 4% improvement over the referenced paper.
 
-Integration of attention mechanisms for enhanced focus on retinal pathology
+⚙️ Used pre-trained CNN backbones like VGG16, ResNet50, Xception, DenseNet121, and EfficientNet-B0.
 
-Experiments conducted on NEH, UCSD, and other public OCT datasets
+🧩 Incorporated attention mechanisms to enhance feature learning.
 
-Visualization with Grad-CAM++ to highlight important regions
+🗂️ Tested across multiple datasets (NEH, UCSD, etc.) for generalization.
 
-Comparative analysis with baseline and state-of-the-art models
+🧠 Visualized important features using Grad-CAM++ for interpretability.
 
-📈 Achievements:
-Achieved up to 96% accuracy on the UCSD dataset
+🛠️ Key Features
+✅ FPN with multi-scale feature fusion
 
-Outperformed the base paper with significantly fewer parameters
+✅ Lightweight architecture with fewer parameters
 
-Demonstrated strong generalization across diverse datasets
+✅ Explainable AI via Grad-CAM++
 
-🚀 Tech Stack:
+✅ Comparative analysis with referenced models
+
+📁 Dataset
+The project uses publicly available NEH and UCSD OCT datasets.
+
+Dataset split into training, validation, and test folders.
+
+🧪 Results
+
+Model	Accuracy	Parameters
+FPN + VGG16	96%	16.1M
+Base Paper	92%	21.6M
+📦 Requirements
+Python ≥ 3.8
+
 TensorFlow / Keras
 
-Python
+OpenCV, NumPy, Matplotlib
 
-Jupyter Notebooks
-
-Matplotlib, Seaborn for visualizations
-
-📂 Structure:
-models/ – Backbone models with FPN and attention
-
-notebooks/ – Training, evaluation, and visualization
-
-data/ – Data loading and preprocessing
-
-results/ – Performance metrics and figures
-
-README.md – Project overview and usage
+scikit-learn
